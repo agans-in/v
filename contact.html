@@ -1,0 +1,358 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Contact AGAN'S premium snacks for enquiries, bulk orders, and business conversations.">
+<title>Contact | AGAN'S Premium Snacks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#732c91",
+                        "on-background": "#2f0c33",
+                        "tertiary": "#705d00",
+                        "secondary-fixed-dim": "#ffb778",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ffe7fb",
+                        "surface-bright": "#fff7fa",
+                        "tertiary-container": "#c9a900",
+                        "outline": "#7f7381",
+                        "surface-tint": "#863fa4",
+                        "surface": "#fff7fa",
+                        "on-tertiary-fixed": "#221b00",
+                        "inverse-surface": "#47224a",
+                        "on-secondary-fixed-variant": "#6c3a00",
+                        "surface-container-high": "#ffdefb",
+                        "on-primary-fixed-variant": "#6b248a",
+                        "surface-container-highest": "#ffd6fc",
+                        "on-surface-variant": "#4e4350",
+                        "on-secondary-fixed": "#2e1500",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "on-surface": "#2f0c33",
+                        "on-primary-container": "#e8a7ff",
+                        "background": "#fff7fa",
+                        "surface-variant": "#ffd6fc",
+                        "secondary-container": "#fd9000",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c400",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-error-container": "#93000a",
+                        "primary": "#590c78",
+                        "inverse-primary": "#ecb2ff",
+                        "inverse-on-surface": "#ffebfa",
+                        "secondary": "#8e4e00",
+                        "on-secondary-container": "#613400",
+                        "tertiary-fixed": "#ffe170",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#320047",
+                        "surface-dim": "#fdcafb",
+                        "outline-variant": "#d1c2d1",
+                        "primary-fixed": "#f8d8ff",
+                        "on-tertiary-container": "#4c3e00",
+                        "surface-container-low": "#ffeffa",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "sm": "12px",
+                        "margin-mobile": "24px",
+                        "lg": "64px",
+                        "md": "32px",
+                        "xl": "120px",
+                        "gutter": "32px",
+                        "xs": "4px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Bricolage Grotesque"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+        .premium-shadow {
+            filter: drop-shadow(0 20px 30px rgba(89, 12, 120, 0.15));
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.03;
+        }
+        .text-tight {
+            letter-spacing: -0.05em;
+        }
+        .leading-premium {
+            line-height: 1.8;
+        }
+    </style>
+<style id="agans-responsive-fixes">
+  @media (min-width: 768px) {
+    header nav { padding-left: 80px !important; padding-right: 80px !important; }
+    header .agans-desktop-nav { gap: 64px !important; }
+  }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-weight: 700 !important; }
+  header .font-headline { font-family: "Bricolage Grotesque", sans-serif !important; }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-family: "Space Grotesk", sans-serif !important; }
+  .agans-menu-button { display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; background: transparent; color: #590c78; padding: 0; }
+  .agans-mobile-menu { display: none; border-top: 1px solid rgba(89, 12, 120, 0.08); background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(16px); }
+  .agans-mobile-menu.is-open { display: block; }
+  .agans-mobile-menu a { display: block; min-height: 48px; padding: 14px 24px; font-family: Space Grotesk, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f0c33; text-decoration: none; }
+  .agans-mobile-menu a:hover, .agans-mobile-menu a[aria-current="page"] { color: #590c78; background: rgba(89, 12, 120, 0.05); }
+  body.agans-menu-open { overflow: hidden; }
+  .agans-link-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+  .agans-field-error { display: block; min-height: 18px; margin-top: 6px; color: #ba1a1a; font-size: 12px; }
+  .agans-form-status { min-height: 24px; color: #4e4350; }
+  @media (max-width: 1024px) {
+    .agans-menu-button { display: inline-flex; }
+    .agans-desktop-nav { display: none !important; }
+    .agans-order-desktop { display: none !important; }
+    header nav { padding-left: 24px !important; padding-right: 24px !important; }
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1023px) {
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 360px) {
+    .font-handwritten.text-7xl { font-size: 4rem !important; line-height: 1 !important; }
+    .font-headline-xl.text-headline-xl { font-size: 60px !important; }
+    [class*="w-96"][class*="h-96"][class*="bg-white/5"] { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .rounded-\[40px\] .w-96.h-96 { width: 14rem !important; height: 14rem !important; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white font-body">
+<!-- Header -->
+<header class="w-full top-0 sticky z-50 bg-white/80 backdrop-blur-md border-b border-primary/10">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="flex items-center gap-sm no-underline" href="index.html">
+<img alt="AGAN'S Logo" class="h-12 w-auto" src="imgs/agans-mark-primary.png">
+</a>
+<div class="hidden md:flex items-center gap-lg agans-desktop-nav">
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="index.html">Home</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="snacks.html">Snacks</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="contact.html" aria-current="page">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="agans-link-button agans-order-desktop px-8 py-3 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 whitespace-nowrap" href="snacks.html">Order Now</a>
+<button class="agans-menu-button" type="button" data-agans-menu-toggle aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<div class="agans-mobile-menu" data-agans-mobile-menu>
+<a href="index.html">Home</a>
+<a href="snacks.html">Snacks</a>
+<a href="about.html">About</a>
+<a href="contact.html" aria-current="page">Contact</a>
+<a href="snacks.html">Order Now</a>
+</div>
+</header>
+<main>
+<section class="relative min-h-[55vh] flex items-center bg-gradient-to-br from-white to-surface-container-low overflow-hidden pt-lg">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-xl relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 bg-primary/5 text-primary font-label text-xs tracking-[0.2em] rounded-full mb-md uppercase border border-primary/10">Contact</span>
+<h1 class="font-headline text-[56px] md:text-[88px] text-primary mb-md leading-[0.9] text-tight font-extrabold">Get in <br><span class="text-secondary italic">Touch.</span></h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-lg leading-premium max-w-lg">Reach the AGAN'S team for orders, collaborations, festive hampers, and questions about our artisanal snacks.</p>
+</div>
+<div class="relative flex justify-center items-center">
+<div class="absolute w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+<img alt="AGAN'S Logo" class="w-full max-w-[360px] rounded-xl premium-shadow" src="imgs/agans-mark-primary.png">
+</div>
+</div>
+<div class="absolute inset-0 grain-overlay pointer-events-none"></div>
+</section>
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="text-center mb-xl max-w-3xl mx-auto">
+<span class="font-label text-xs tracking-[0.3em] text-secondary uppercase mb-sm block">Contact Information</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Start the Conversation.</h2>
+<p class="text-on-surface-variant text-lg leading-premium">Official contact details were not available in the project, so these placeholders are ready to replace.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md max-w-6xl mx-auto">
+<div class="bg-white rounded-xl border border-primary/10 p-md text-center hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+<h3 class="font-headline text-2xl text-primary mt-sm mb-xs font-bold tracking-tight">Address</h3>
+<p class="text-on-surface-variant leading-premium">Address to be added</p>
+</div><div class="bg-white rounded-xl border border-primary/10 p-md text-center hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-4xl">call</span>
+<h3 class="font-headline text-2xl text-primary mt-sm mb-xs font-bold tracking-tight">Phone</h3>
+<p class="text-on-surface-variant leading-premium">Phone number to be added</p>
+</div><div class="bg-white rounded-xl border border-primary/10 p-md text-center hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-4xl">alternate_email</span>
+<h3 class="font-headline text-2xl text-primary mt-sm mb-xs font-bold tracking-tight">Email</h3>
+<p class="text-on-surface-variant leading-premium">Email address to be added</p>
+</div><div class="bg-white rounded-xl border border-primary/10 p-md text-center hover:border-primary/30 hover:shadow-2xl transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-4xl">schedule</span>
+<h3 class="font-headline text-2xl text-primary mt-sm mb-xs font-bold tracking-tight">Business Hours</h3>
+<p class="text-on-surface-variant leading-premium">Hours to be added</p>
+</div>
+</div>
+</section>
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="contact-form">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl max-w-6xl mx-auto items-start">
+<div>
+<span class="font-label text-xs tracking-[0.3em] text-secondary uppercase mb-sm block">Write to Us</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Tell us what you need.</h2>
+<p class="text-on-surface-variant text-lg leading-premium">This form validates your message locally. A backend or form service can be connected when official details are ready.</p>
+</div>
+<form class="agans-contact-form bg-surface-container-low border border-primary/10 rounded-[2rem] p-md md:p-lg shadow-xl grid gap-md" novalidate>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<label class="block font-label text-xs tracking-widest uppercase text-primary">Full Name<input id="full-name" class="mt-sm w-full rounded-full border-primary/20 focus:border-primary focus:ring-primary/20" name="name" required><span class="agans-field-error" data-error-for="full-name"></span></label>
+<label class="block font-label text-xs tracking-widest uppercase text-primary">Email<input id="email-address" class="mt-sm w-full rounded-full border-primary/20 focus:border-primary focus:ring-primary/20" name="email" type="email" required><span class="agans-field-error" data-error-for="email-address"></span></label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<label class="block font-label text-xs tracking-widest uppercase text-primary">Phone<input id="phone-number" class="mt-sm w-full rounded-full border-primary/20 focus:border-primary focus:ring-primary/20" name="phone" type="tel" pattern="[0-9+()\-\s]{7,}"><span class="agans-field-error" data-error-for="phone-number"></span></label>
+<label class="block font-label text-xs tracking-widest uppercase text-primary">Subject<select id="subject" class="mt-sm w-full rounded-full border-primary/20 focus:border-primary focus:ring-primary/20" name="subject" required><option value="">Choose a subject</option><option>General enquiry</option><option>Bulk order</option><option>Festival hamper</option><option>Retail partnership</option></select><span class="agans-field-error" data-error-for="subject"></span></label>
+</div>
+<label class="block font-label text-xs tracking-widest uppercase text-primary">Message<textarea id="message" class="mt-sm w-full rounded-xl border-primary/20 focus:border-primary focus:ring-primary/20" name="message" rows="6" minlength="10" required></textarea><span class="agans-field-error" data-error-for="message"></span></label>
+<button class="px-10 py-4 bg-primary text-white font-label text-sm tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-xl shadow-primary/20" type="submit">Submit</button>
+<p class="agans-form-status text-on-surface-variant leading-premium" role="status" aria-live="polite"></p>
+</form>
+</div>
+</section>
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-white relative overflow-hidden">
+<div class="container mx-auto text-center relative z-10">
+<span class="font-label text-xs tracking-[0.4em] uppercase opacity-60 mb-md block">Ready for a Batch?</span>
+<h2 class="font-headline text-[48px] md:text-[64px] mb-lg leading-[1] font-bold text-tight">Explore the AGAN'S collection.</h2>
+<a class="agans-link-button px-10 py-4 bg-white text-primary font-label text-sm tracking-widest uppercase rounded-full hover:bg-surface transition-all" href="snacks.html">Order Now</a>
+</div>
+<div class="absolute inset-0 grain-overlay pointer-events-none"></div>
+</section>
+</main>
+<footer class="bg-on-background text-white pt-xl pb-md">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl">
+<div class="col-span-1 md:col-span-1">
+<img alt="AGAN'S Logo" class="h-16 w-auto mb-md" src="imgs/agans-mark-white.png">
+<p class="text-sm opacity-50 leading-premium max-w-xs">Crafting exceptional snacking experiences since 1984. From our family to your table.</p>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Collections</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Private Reserve</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Traditional Favorites</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Festival Hampers</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Experience</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Store Locator</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Bulk &amp; Corporate</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Sustainability</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Follow</h4>
+<div class="flex gap-md">
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">chat</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">call</span></a></div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-md text-center">
+<p class="text-[10px] font-label tracking-widest opacity-30 uppercase">© 2026 AGAN'S SNACKS. AUTHENTICITY GUARANTEED. PRODUCT OF INDIA.</p>
+</div>
+</footer>
+<script id="agans-site-script">
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-agans-menu-toggle]');
+    const menu = document.querySelector('[data-agans-mobile-menu]');
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
+      document.body.classList.remove('agans-menu-open');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = 'menu';
+    }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+        document.body.classList.toggle('agans-menu-open', !open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'menu' : 'close';
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.classList.contains('is-open') && !event.target.closest('header')) closeMenu();
+      });
+    }
+
+    document.querySelectorAll('[data-agans-add]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-28 right-6 bg-on-background text-white px-6 py-4 rounded-2xl z-[100] font-label text-[12px] tracking-widest uppercase shadow-xl';
+        toast.textContent = 'ADDED TO YOUR BAG';
+        document.body.appendChild(toast);
+        setTimeout(function () { toast.remove(); }, 1800);
+      });
+    });
+
+    document.querySelectorAll('.agans-contact-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let valid = true;
+        form.querySelectorAll('.agans-field-error').forEach(function (node) { node.textContent = ''; });
+        form.querySelectorAll('input, select, textarea').forEach(function (field) {
+          if (!field.checkValidity()) {
+            valid = false;
+            const error = form.querySelector('[data-error-for="' + field.id + '"]');
+            if (error) {
+              if (field.validity.valueMissing) error.textContent = 'Please complete this field.';
+              else if (field.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+              else if (field.validity.patternMismatch) error.textContent = 'Please enter a valid phone number.';
+              else if (field.validity.tooShort) error.textContent = 'Please add a little more detail.';
+              else error.textContent = 'Please check this field.';
+            }
+          }
+        });
+        const status = form.querySelector('.agans-form-status');
+        if (!valid) {
+          if (status) status.textContent = 'Please fix the highlighted fields.';
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        if (status) status.textContent = 'Your message is ready. Connect a form endpoint to send it.';
+      });
+    });
+  });
+</script>
+</body></html>

@@ -1,0 +1,999 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AGAN'S | Exquisite Crunches</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#732c91",
+                        "on-background": "#2f0c33",
+                        "tertiary": "#705d00",
+                        "secondary-fixed-dim": "#ffb778",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ffe7fb",
+                        "surface-bright": "#fff7fa",
+                        "tertiary-container": "#c9a900",
+                        "outline": "#7f7381",
+                        "surface-tint": "#863fa4",
+                        "surface": "#fff7fa",
+                        "on-tertiary-fixed": "#221b00",
+                        "inverse-surface": "#47224a",
+                        "on-secondary-fixed-variant": "#6c3a00",
+                        "surface-container-high": "#ffdefb",
+                        "on-primary-fixed-variant": "#6b248a",
+                        "surface-container-highest": "#ffd6fc",
+                        "on-surface-variant": "#4e4350",
+                        "on-secondary-fixed": "#2e1500",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "on-surface": "#2f0c33",
+                        "on-primary-container": "#e8a7ff",
+                        "background": "#fff7fa",
+                        "surface-variant": "#ffd6fc",
+                        "secondary-container": "#fd9000",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c400",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-error-container": "#93000a",
+                        "primary": "#590c78",
+                        "inverse-primary": "#ecb2ff",
+                        "inverse-on-surface": "#ffebfa",
+                        "secondary": "#8e4e00",
+                        "on-secondary-container": "#613400",
+                        "tertiary-fixed": "#ffe170",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#320047",
+                        "surface-dim": "#fdcafb",
+                        "outline-variant": "#d1c2d1",
+                        "primary-fixed": "#f8d8ff",
+                        "on-tertiary-container": "#4c3e00",
+                        "surface-container-low": "#ffeffa",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "sm": "12px",
+                        "margin-mobile": "24px",
+                        "lg": "64px",
+                        "md": "32px",
+                        "xl": "120px",
+                        "gutter": "32px",
+                        "xs": "4px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Bricolage Grotesque"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+        .premium-shadow {
+            filter: drop-shadow(0 20px 30px rgba(89, 12, 120, 0.15));
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.03;
+        }
+        .text-tight {
+            letter-spacing: -0.05em;
+        }
+        .leading-premium {
+            line-height: 1.8;
+        }
+    
+  @media (max-width: 767px) {
+    .agans-home-hero { min-height: auto !important; padding-bottom: 64px !important; }
+    .agans-hero-product { display: none !important; }
+  }
+  @media (min-width: 768px) and (max-width: 1365px) {
+    .agans-home-hero { padding-bottom: 96px !important; }
+    .agans-product-marquee { margin-top: 32px !important; }
+  }
+</style>
+
+<style id="agans-responsive-fixes">
+  @media (min-width: 768px) {
+    header nav { padding-left: 80px !important; padding-right: 80px !important; }
+    header .agans-desktop-nav { gap: 64px !important; }
+  }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-weight: 700 !important; }
+  header .font-headline { font-family: "Bricolage Grotesque", sans-serif !important; }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-family: "Space Grotesk", sans-serif !important; }
+  .agans-menu-button { display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; background: transparent; color: #590c78; padding: 0; }
+  .agans-mobile-menu { display: none; border-top: 1px solid rgba(89, 12, 120, 0.08); background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(16px); }
+  .agans-mobile-menu.is-open { display: block; }
+  .agans-mobile-menu a { display: block; min-height: 48px; padding: 14px 24px; font-family: Space Grotesk, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f0c33; text-decoration: none; }
+  .agans-mobile-menu a:hover, .agans-mobile-menu a[aria-current="page"] { color: #590c78; background: rgba(89, 12, 120, 0.05); }
+  body.agans-menu-open { overflow: hidden; }
+  .agans-link-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+  .agans-field-error { display: block; min-height: 18px; margin-top: 6px; color: #ba1a1a; font-size: 12px; }
+  .agans-form-status { min-height: 24px; color: #4e4350; }
+  @media (max-width: 1024px) {
+    .agans-menu-button { display: inline-flex; }
+    .agans-desktop-nav { display: none !important; }
+    .agans-order-desktop { display: none !important; }
+    header nav { padding-left: 24px !important; padding-right: 24px !important; }
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1023px) {
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 360px) {
+    .font-handwritten.text-7xl { font-size: 4rem !important; line-height: 1 !important; }
+    .font-headline-xl.text-headline-xl { font-size: 60px !important; }
+    [class*="w-96"][class*="h-96"][class*="bg-white/5"] { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .rounded-\[40px\] .w-96.h-96 { width: 14rem !important; height: 14rem !important; }
+  }
+</style>
+<!-- Cinematic hero asset preloads -->
+<link rel="preload" as="image" href="assets/agans-closed.png.png">
+<link rel="preload" as="image" href="assets/agans-open1.png.png">
+<link rel="preload" as="image" href="assets/agans-open2.png.png">
+<link rel="preload" as="image" href="assets/agans-explosion.png.png">
+<link rel="preload" as="image" href="assets/agans-clear.png.png">
+<link rel="preload" as="image" href="assets/agans-final.png.png">
+<link rel="preload" as="image" href="assets/chip-1.png.png">
+<link rel="preload" as="image" href="assets/chip-2.png.png">
+<link rel="preload" as="image" href="assets/chip-3.png.png">
+<link rel="preload" as="image" href="assets/chip-4.png.png">
+<link rel="preload" as="image" href="assets/chip-5.png.png">
+<link rel="preload" as="image" href="assets/chip-6.png.png">
+<link rel="preload" as="image" href="assets/chip-7.png.png">
+<link rel="preload" as="image" href="assets/chip-8.png.png">
+<link rel="preload" as="image" href="assets/chip-9.png.png">
+<link rel="preload" as="image" href="assets/chip-10.png.png">
+<link rel="preload" as="image" href="assets/crumps.png.png">
+<link rel="preload" as="image" href="assets/sesoning.png.png">
+
+<style id="agans-cinematic-hero-css">
+  html {
+    overflow-x: hidden;
+  }
+  .agans-product-marquee {
+    max-width: 100vw;
+    contain: paint;
+  }
+  .agans-cinematic-stage {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+    overflow: hidden;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
+  .agans-cinematic-glow,
+  .agans-cinematic-burst,
+  .agans-cinematic-burst::before,
+  .agans-cinematic-burst::after,
+  .agans-cinematic-shadow,
+  .agans-cinematic-packet-wrap,
+  .agans-cinematic-packet,
+  .agans-cinematic-chip,
+  .agans-cinematic-crumb,
+  .agans-cinematic-seasoning {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform, opacity, filter;
+    user-select: none;
+  }
+  .agans-cinematic-glow {
+    width: min(54vw, 700px);
+    aspect-ratio: 1;
+    border-radius: 9999px;
+    opacity: 0;
+    background:
+      radial-gradient(circle, rgba(255, 197, 84, 0.46) 0%, rgba(255, 214, 128, 0.2) 28%, rgba(255, 239, 186, 0.08) 48%, rgba(255, 239, 186, 0) 72%);
+    filter: blur(18px);
+    mix-blend-mode: screen;
+  }
+  .agans-cinematic-burst {
+    width: min(30vw, 390px);
+    aspect-ratio: 1;
+    border-radius: 9999px;
+    opacity: 0;
+    background:
+      radial-gradient(circle, rgba(255, 245, 195, 0.58) 0%, rgba(255, 210, 100, 0.22) 28%, rgba(255, 210, 100, 0) 66%);
+    filter: blur(12px);
+    mix-blend-mode: screen;
+  }
+  .agans-cinematic-burst::before,
+  .agans-cinematic-burst::after {
+    content: "";
+    position: absolute;
+    inset: 18%;
+    border-radius: 9999px;
+    background:
+      conic-gradient(from 20deg, rgba(255, 242, 185, 0), rgba(255, 242, 185, 0.42), rgba(255, 242, 185, 0), rgba(255, 204, 92, 0.28), rgba(255, 242, 185, 0));
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  .agans-cinematic-burst::after {
+    inset: 30%;
+    transform: rotate(45deg);
+    opacity: 0.35;
+  }
+  .agans-cinematic-shadow {
+    width: min(34vw, 460px);
+    aspect-ratio: 3.9 / 1;
+    top: 81%;
+    border-radius: 9999px;
+    opacity: 0;
+    background:
+      radial-gradient(ellipse at center, rgba(47, 12, 51, 0.28) 0%, rgba(47, 12, 51, 0.16) 38%, rgba(47, 12, 51, 0.05) 62%, rgba(47, 12, 51, 0) 78%);
+    filter: blur(10px);
+    mix-blend-mode: multiply;
+  }
+  .agans-cinematic-packet-wrap {
+    width: min(35vw, 500px);
+    aspect-ratio: 878 / 1216;
+    max-height: 72vh;
+    opacity: 0;
+    filter: drop-shadow(0 28px 32px rgba(89, 12, 120, 0.2));
+    transform-origin: 50% 82%;
+  }
+  .agans-cinematic-packet {
+    inset: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 82%;
+  }
+  .agans-cinematic-chip {
+    width: var(--chip-size, 58px);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    filter: drop-shadow(0 10px 12px rgba(89, 12, 120, 0.12));
+  }
+  .agans-cinematic-crumb,
+  .agans-cinematic-seasoning {
+    opacity: 0;
+    transform-origin: 50% 50%;
+  }
+  .agans-cinematic-crumb {
+    width: var(--crumb-size, 28px);
+    filter: blur(var(--crumb-blur, 0));
+  }
+  .agans-cinematic-seasoning {
+    width: var(--seasoning-size, 20px);
+    filter: blur(var(--seasoning-blur, 0));
+    mix-blend-mode: multiply;
+  }
+  .agans-hero-cinematic-copy,
+  .agans-hero-product {
+    will-change: transform, opacity;
+  }
+  @media (max-width: 767px) {
+    .max-w-6xl > .group {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+    .max-w-6xl > .group [class~="w-72"] {
+      width: min(14rem, 100%) !important;
+    }
+    section.bg-primary .skew-x-12 {
+      display: none !important;
+    }
+    .agans-cinematic-stage {
+      z-index: 8;
+    }
+    .agans-cinematic-packet-wrap {
+      width: min(74vw, 320px);
+      max-height: 56vh;
+    }
+    .agans-cinematic-glow {
+      width: min(94vw, 430px);
+    }
+    .agans-cinematic-burst {
+      width: min(70vw, 310px);
+    }
+    .agans-cinematic-shadow {
+      width: min(66vw, 300px);
+      top: 74%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .agans-cinematic-packet-wrap {
+      width: min(43vw, 420px);
+      max-height: 62vh;
+    }
+    .agans-cinematic-glow {
+      width: min(64vw, 560px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .agans-cinematic-stage {
+      display: none !important;
+    }
+  }
+</style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white font-body">
+<!-- Header -->
+<header class="w-full top-0 sticky z-50 bg-white/80 backdrop-blur-md border-b border-primary/10">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="flex items-center gap-sm no-underline" href="index.html">
+<img alt="AGAN'S Logo" class="h-12 w-auto" src="imgs/agans-mark-primary.png">
+</a>
+<div class="hidden md:flex items-center gap-lg agans-desktop-nav">
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="index.html" aria-current="page">Home</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="snacks.html">Snacks</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="agans-link-button agans-order-desktop px-8 py-3 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 whitespace-nowrap" href="snacks.html">Order Now</a>
+<button class="agans-menu-button" type="button" data-agans-menu-toggle aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<div class="agans-mobile-menu" data-agans-mobile-menu>
+<a href="index.html" aria-current="page">Home</a>
+<a href="snacks.html">Snacks</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="snacks.html">Order Now</a>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="agans-home-hero relative min-h-[85vh] flex items-center bg-gradient-to-br from-white to-surface-container-low overflow-hidden pt-lg">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-xl relative z-10 transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="agans-hero-cinematic-copy max-w-2xl">
+<span class="inline-block px-4 py-1 bg-primary/5 text-primary font-label text-xs tracking-[0.2em] rounded-full mb-md uppercase border border-primary/10">Kerala Heritage
+                </span>
+<h1 class="font-headline text-[64px] md:text-[96px] text-primary mb-md leading-[0.9] text-tight font-extrabold">
+                    Elegance in <br><span class="text-secondary italic">Every Crunch.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-lg leading-premium max-w-lg">
+                    Experience the artisanal craft of traditional Kerala snacks. Hand-selected ingredients meet time-honored recipes for a truly refined palate.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a class="agans-link-button px-10 py-4 bg-primary text-white font-label text-sm tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-xl shadow-primary/20" href="snacks.html">Shop Collection</a>
+<a class="agans-link-button px-10 py-4 bg-white text-primary font-label text-sm tracking-widest uppercase rounded-full border border-primary/20 hover:border-primary transition-all" href="about.html">Our Story</a>
+</div>
+</div>
+<div class="agans-hero-product relative flex justify-center items-center">
+<div class="absolute w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+<img alt="Premium Banana Chips" class="w-full max-w-[500px] premium-shadow" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+</div>
+</div>
+
+<aside class="agans-cinematic-stage" aria-hidden="true">
+  <div class="agans-cinematic-glow"></div>
+  <div class="agans-cinematic-burst"></div>
+  <div class="agans-cinematic-shadow"></div>
+  <div class="agans-cinematic-packet-wrap" data-packet-state="closed">
+    <img class="agans-cinematic-packet" data-packet-frame="closed" src="assets/agans-closed.png.png" alt="">
+    <img class="agans-cinematic-packet" data-packet-frame="open1" src="assets/agans-open1.png.png" alt="">
+    <img class="agans-cinematic-packet" data-packet-frame="open2" src="assets/agans-open2.png.png" alt="">
+    <img class="agans-cinematic-packet" data-packet-frame="explosion" src="assets/agans-explosion.png.png" alt="">
+    <img class="agans-cinematic-packet" data-packet-frame="clear" src="assets/agans-clear.png.png" alt="">
+    <img class="agans-cinematic-packet" data-packet-frame="final" src="assets/agans-final.png.png" alt="">
+  </div>
+</aside>
+<div class="absolute inset-0 grain-overlay pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+<!-- Endless Scrolling Marquee -->
+<section class="agans-product-marquee py-lg bg-white border-y border-primary/5 overflow-hidden">
+<div class="flex whitespace-nowrap animate-marquee transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="flex gap-xl px-xl shrink-0 items-center">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+<div class="flex gap-xl px-xl shrink-0 items-center">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+</div>
+</section>
+<!-- Refined Choice Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="text-center mb-xl max-w-3xl mx-auto transform transition-all duration-1000 translate-y-0 opacity-100">
+<span class="font-label text-xs tracking-[0.3em] text-secondary uppercase mb-sm block">A Tale of Two Flavors</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Refined for the Connoisseur.</h2>
+<p class="text-on-surface-variant text-lg leading-premium">Handmade with precision, seasoned with legacy. Choose the profile that speaks to your senses.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md max-w-6xl mx-auto transform transition-all duration-1000 translate-y-0 opacity-100">
+<!-- Premium Card 1 -->
+<div class="group bg-white rounded-xl border border-primary/10 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center mx-auto py-4 px-md max-w-lg">
+<div class="overflow-hidden flex justify-center mb-sm">
+<img alt="Black Pack" class="w-72 h-auto group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] text-primary bg-primary/5 px-3 py-1 rounded-full mb-sm uppercase">The Signature</span>
+<h3 class="font-headline text-3xl text-primary mb-sm font-bold tracking-tight">Classic Gold</h3>
+<p class="text-on-surface-variant max-w-xs leading-premium mb-sm">Subtle notes of sea salt and pure coconut oil. The original masterpiece.</p>
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mb-sm"></div>
+<ul class="space-y-sm text-sm text-on-surface-variant mb-md">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> 100% Organic Bananas</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Cold-Pressed Coconut Oil</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Small-Batch Production</li>
+</ul>
+<a class="agans-link-button w-full py-4 border border-primary text-primary font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary hover:text-white transition-all" href="snacks.html">Discover Selection</a>
+</div>
+<!-- Premium Card 2 -->
+<div class="group bg-primary/5 rounded-xl border border-primary/10 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center mx-auto py-4 px-md max-w-lg">
+<div class="overflow-hidden flex justify-center mb-sm">
+<img alt="Yellow Pack" class="w-72 h-auto group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-sm uppercase">Bold &amp; Refined</span>
+<h3 class="font-headline text-3xl text-primary mb-sm font-bold tracking-tight">Hot Garlic Noir</h3>
+<p class="text-on-surface-variant max-w-xs leading-premium mb-sm">A sophisticated heat profile balanced with aromatic roasted garlic.</p>
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mb-sm"></div>
+<ul class="space-y-sm text-sm text-on-surface-variant mb-md">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Artisanal Spice Blend</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Slow-Roasted Aromatics</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Preservative-Free Craft</li>
+</ul>
+<a class="agans-link-button w-full py-4 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all" href="snacks.html">Discover Selection</a>
+</div>
+</div>
+</section>
+<!-- Categories -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white">
+<div class="mb-lg flex justify-between items-end transform transition-all duration-1000 translate-y-0 opacity-100">
+<div>
+<span class="font-label text-xs tracking-widest text-primary uppercase block mb-xs">Curated</span>
+<h2 class="font-headline text-4xl text-primary font-bold text-tight">Explore the Pantry</h2>
+</div>
+<a class="font-label text-xs tracking-widest text-primary border-b border-primary pb-1 hidden md:block" href="snacks.html">VIEW ALL CATEGORIES</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Premium golden-brown banana chips with artisanal spices" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq-pGaG-pBzFekEX26gsq8t_Wn94kQT6FIuiVHlNy5K1ODklrgj1JL-YVArT99A38TCqMNis8nxxELBAkaTvmd3TD3i7Y_-K2Lfe1Bm9nSC7F_XwFrcnG_rL94nhqkJ9RPEM9JZHVLosL_JBCPpHeOauw3xLgjI64f4LXTJ7R9x4q0ZX-MerlWZt-SQNg42DgPotR46CLlg2ftVGoZW0zsJfYm_RMxYRYxaDLwNnxC8zHoDKUFa6kpRQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Heritage Chips</h3>
+<p class="text-xs opacity-80 mb-md font-body">Kettle-cooked to perfection.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Murukku" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsMiUGEBAsY5X0DxWbglYHCy23BSDK6ntZJcsFevpk-5sBGgIj3BFT-n6RauHF_Uj3B6fv1UgBA6EyzpdR9RBuk94VG_k2JK4XIr2u2IVc3-TMEwCmhCWy8RrScu9CfHTE6GgIm3bncjUr_mKaTGuZf5kibm3psGuAPt3Y_9kRHbrNcEy1yoDatH4AidOR9oaUUcOXtRqwuLIti0fYGqVWWoE1vZrhidAc6cDkT4xbzmM-smURxmP-7w">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Murukku</h3>
+<p class="text-xs opacity-80 mb-md font-body">Symmetry in spice and texture.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Sweets" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt4li24p7gWgjnL1wPKXKwCZWv0CV9U6kK7YhpkFJR4L0OgdkNA0toZxSAG2XuHQE5an82stnsYuevMEAQrb5YDZ9tuejs3EVbAvWfPoPaZQRwzVCKAeI169DFev3eXKOEnIRUBCuuk-FUR4Eu-SQFfOhKYtoSYQuN-ZaiaUCc6J8-iAJ66D6upBVKDk8z7aOfRRjS1saHmwsfNhnvNHBxBy8SX4xv_BI10DSStrqNFOYVj-KpaBXzmA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Delicate Sweets</h3>
+<p class="text-xs opacity-80 mb-md font-body">Fine confectionery for festivities.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-white relative overflow-hidden">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-xl relative z-10 transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="relative order-2 md:order-1">
+<img alt="Legacy" class="rounded-2xl border border-white/20 premium-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSJjHoK0DMSNvqujaOhsrbGTtN2cd-UAWI6OmLCTGvIh2MWDQpNQzpBuBR0TJaEwqWRiQAtGZ224YhcIo4a80C962dpSWfkqPoPCu1k3uxrGHDDvrlM2i9h4kltepwGeeZlXCOAfFzJ65Na5mH6Ek4ok8FcxgrzbGhZAi-fshlPKwCn6lDRa82qH9nqIZ4aPybI2wDwYRJg44JWLJwuHbeVNdERCYe9aCSzN8QR6CnH-Rjf8mgM9qbjyTEQ5pDOZbliU8ECcflKipU">
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary flex items-center justify-center rounded-full border-4 border-primary font-headline text-center leading-none text-white p-4">
+                    THE<br>AGAN'S<br>WAY
+                </div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label text-xs tracking-[0.4em] uppercase opacity-60 mb-md block">Our Philosophy</span>
+<h2 class="font-headline text-[48px] md:text-[64px] mb-lg leading-[1] font-bold text-tight">Decades of <br>Perfecting the <br>Moment.</h2>
+<p class="text-lg opacity-80 leading-premium mb-xl max-w-lg">
+                    Since 1984, our family has been committed to a single goal: creating snacks that transcend simple consumption. We treat each batch as an artwork, ensuring the heritage of Kerala is honored in every bite.
+                </p>
+<a class="agans-link-button px-10 py-4 bg-white text-primary font-label text-sm tracking-widest uppercase rounded-full hover:bg-surface transition-all" href="about.html">Explore the Process</a>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2 pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+<!-- Newsletter -->
+<section class="px-margin-mobile md:px-margin-desktop bg-background relative overflow-hidden py-lg">
+<div class="container mx-auto max-w-2xl transform transition-all duration-1000 translate-y-0 opacity-100"><div class="bg-surface-container-low border border-primary/10 rounded-[2rem] p-md md:p-lg shadow-xl text-center relative z-10 max-w-2xl mx-auto">
+<span class="font-label text-xs tracking-[0.3em] text-primary uppercase mb-sm block">Connect with the Craft</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Join the Conversation</h2>
+<div class="mb-lg">
+<a class="font-headline text-3xl md:text-[48px] text-secondary italic hover:text-primary transition-colors duration-500" href="contact.html">@agans.in</a>
+</div>
+<div class="flex flex-wrap justify-center gap-md sm:gap-lg mb-lg">
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Instagram</span>
+</a>
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Call</span>
+</a>
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary">chat</span>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Whatsapp</span>
+</a>
+</div>
+</div></div>
+<div class="absolute inset-0 grain-overlay pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+</main>
+<footer class="bg-on-background text-white pt-xl pb-md">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl">
+<div class="col-span-1 md:col-span-1">
+<img alt="AGAN'S Logo" class="h-16 w-auto mb-md" src="imgs/agans-mark-white.png">
+<p class="text-sm opacity-50 leading-premium max-w-xs">Crafting exceptional snacking experiences since 1984. From our family to your table.</p>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Collections</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Private Reserve</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Traditional Favorites</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Festival Hampers</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Experience</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Store Locator</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Bulk &amp; Corporate</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Sustainability</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Follow</h4>
+<div class="flex gap-md">
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">chat</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">call</span></a></div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-md text-center">
+<p class="text-[10px] font-label tracking-widest opacity-30 uppercase">© 2026 AGAN'S SNACKS. AUTHENTICITY GUARANTEED. PRODUCT OF INDIA.</p>
+</div>
+</footer>
+<script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('translate-y-0', 'opacity-100');
+                entry.target.classList.remove('translate-y-10', 'opacity-0');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section > div').forEach(el => {
+        el.classList.add('transform', 'translate-y-10', 'opacity-0', 'transition-all', 'duration-1000');
+        observer.observe(el);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script id="agans-site-script">
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-agans-menu-toggle]');
+    const menu = document.querySelector('[data-agans-mobile-menu]');
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
+      document.body.classList.remove('agans-menu-open');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = 'menu';
+    }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+        document.body.classList.toggle('agans-menu-open', !open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'menu' : 'close';
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.classList.contains('is-open') && !event.target.closest('header')) closeMenu();
+      });
+    }
+
+    document.querySelectorAll('[data-agans-add]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-28 right-6 bg-on-background text-white px-6 py-4 rounded-2xl z-[100] font-label text-[12px] tracking-widest uppercase shadow-xl';
+        toast.textContent = 'ADDED TO YOUR BAG';
+        document.body.appendChild(toast);
+        setTimeout(function () { toast.remove(); }, 1800);
+      });
+    });
+
+    document.querySelectorAll('.agans-contact-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let valid = true;
+        form.querySelectorAll('.agans-field-error').forEach(function (node) { node.textContent = ''; });
+        form.querySelectorAll('input, select, textarea').forEach(function (field) {
+          if (!field.checkValidity()) {
+            valid = false;
+            const error = form.querySelector('[data-error-for="' + field.id + '"]');
+            if (error) {
+              if (field.validity.valueMissing) error.textContent = 'Please complete this field.';
+              else if (field.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+              else if (field.validity.patternMismatch) error.textContent = 'Please enter a valid phone number.';
+              else if (field.validity.tooShort) error.textContent = 'Please add a little more detail.';
+              else error.textContent = 'Please check this field.';
+            }
+          }
+        });
+        const status = form.querySelector('.agans-form-status');
+        if (!valid) {
+          if (status) status.textContent = 'Please fix the highlighted fields.';
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        if (status) status.textContent = 'Your message is ready. Connect a form endpoint to send it.';
+      });
+    });
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script id="agans-cinematic-hero-js">
+  (function () {
+    const hero = document.querySelector('.agans-home-hero');
+    const stage = document.querySelector('.agans-cinematic-stage');
+    const packetWrap = document.querySelector('.agans-cinematic-packet-wrap');
+    const glow = document.querySelector('.agans-cinematic-glow');
+    const burst = document.querySelector('.agans-cinematic-burst');
+    const shadow = document.querySelector('.agans-cinematic-shadow');
+    const copy = document.querySelector('.agans-hero-cinematic-copy');
+    const finalProduct = document.querySelector('.agans-hero-product');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!hero || !stage || !packetWrap || !window.gsap || !window.ScrollTrigger || reduced) {
+      if (stage) stage.style.display = 'none';
+      return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+    stage.style.display = 'block';
+
+    const frames = {
+      closed: stage.querySelector('[data-packet-frame="closed"]'),
+      open1: stage.querySelector('[data-packet-frame="open1"]'),
+      open2: stage.querySelector('[data-packet-frame="open2"]'),
+      explosion: stage.querySelector('[data-packet-frame="explosion"]'),
+      clear: stage.querySelector('[data-packet-frame="clear"]'),
+      final: stage.querySelector('[data-packet-frame="final"]')
+    };
+    const frameList = Object.values(frames).filter(Boolean);
+    const chipSources = Array.from({ length: 10 }, (_, index) => 'assets/chip-' + (index + 1) + '.png.png');
+    const mobile = window.matchMedia('(max-width: 767px)').matches;
+    const tablet = window.matchMedia('(min-width: 768px) and (max-width: 1024px)').matches;
+    const chipCount = mobile ? 18 : tablet ? 28 : 40;
+    const crumbCount = mobile ? 14 : tablet ? 22 : 32;
+    const seasoningCount = mobile ? 12 : tablet ? 18 : 24;
+
+    function seededRandom(seed) {
+      let value = seed >>> 0;
+      return function () {
+        value += 0x6D2B79F5;
+        let t = value;
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+    }
+    const rand = seededRandom(mobile ? 8128 : tablet ? 14112 : 26026);
+    const between = (min, max) => min + (max - min) * rand();
+    const pickSign = () => (rand() > 0.5 ? 1 : -1);
+
+    function makeParticle(className, src, attrs) {
+      const img = document.createElement('img');
+      img.className = className;
+      img.src = src;
+      img.alt = '';
+      Object.keys(attrs || {}).forEach((key) => img.style.setProperty(key, attrs[key]));
+      stage.appendChild(img);
+      return img;
+    }
+
+    const chips = Array.from({ length: chipCount }, (_, index) => {
+      const layer = index % 7 === 0 ? 'fg' : index % 3 === 0 ? 'bg' : 'mid';
+      const baseSize = layer === 'fg' ? between(74, 124) : layer === 'bg' ? between(28, 54) : between(42, 86);
+      const size = mobile ? baseSize * 0.7 : tablet ? baseSize * 0.84 : baseSize;
+      const chip = makeParticle('agans-cinematic-chip', chipSources[index % chipSources.length], {
+        '--chip-size': Math.round(size) + 'px'
+      });
+      chip.dataset.layer = layer;
+      return chip;
+    });
+    const crumbs = Array.from({ length: crumbCount }, () => {
+      const size = mobile ? between(10, 22) : between(12, 32);
+      return makeParticle('agans-cinematic-crumb', 'assets/crumps.png.png', {
+        '--crumb-size': Math.round(size) + 'px',
+        '--crumb-blur': between(0, 1.1).toFixed(2) + 'px'
+      });
+    });
+    const seasoning = Array.from({ length: seasoningCount }, () => {
+      const size = mobile ? between(7, 14) : between(9, 20);
+      return makeParticle('agans-cinematic-seasoning', 'assets/sesoning.png.png', {
+        '--seasoning-size': Math.round(size) + 'px',
+        '--seasoning-blur': between(0, 1.2).toFixed(2) + 'px'
+      });
+    });
+
+    const focusX = mobile ? '50%' : '73%';
+    const focusY = mobile ? '55%' : '52%';
+    gsap.set([packetWrap, glow, burst, shadow], { xPercent: -50, yPercent: -50, left: focusX, top: focusY, force3D: true });
+    gsap.set(packetWrap, { y: mobile ? 560 : 680, scale: mobile ? 0.84 : 0.9, rotate: 0, opacity: 0, z: 0 });
+    gsap.set(frameList, { opacity: 0, scale: 1, force3D: true });
+    gsap.set(frames.closed, { opacity: 1 });
+    gsap.set(glow, { opacity: 0, scale: 0.72, force3D: true });
+    gsap.set(burst, { opacity: 0, scale: 0.48, rotate: -10, force3D: true });
+    gsap.set(shadow, { left: focusX, xPercent: -50, yPercent: -50, y: mobile ? 212 : 270, scaleX: 0.5, scaleY: 0.42, opacity: 0, filter: 'blur(22px)', force3D: true });
+    gsap.set(chips, { left: focusX, top: focusY, xPercent: -50, yPercent: -50, x: 0, y: mobile ? 52 : 70, scale: 0.16, rotate: 0, opacity: 0, force3D: true });
+    gsap.set(crumbs, { left: focusX, top: focusY, xPercent: -50, yPercent: -50, x: 0, y: mobile ? 42 : 58, scale: 0.2, rotate: 0, opacity: 0, force3D: true });
+    gsap.set(seasoning, { left: focusX, top: focusY, xPercent: -50, yPercent: -50, x: 0, y: mobile ? 34 : 48, scale: 0.16, rotate: 0, opacity: 0, force3D: true });
+
+    if (copy) gsap.set(copy, { opacity: 0, y: mobile ? 14 : 24, force3D: true });
+    if (finalProduct) gsap.set(finalProduct, { opacity: 0, y: 20, scale: 0.98, force3D: true });
+
+    function labelPacket(state) {
+      packetWrap.dataset.packetState = state;
+    }
+
+    function crossfadePacket(tl, from, to, at, duration) {
+      tl.call(() => labelPacket(to), [], at)
+        .to(frames[to], { opacity: 1, scale: 1.006, duration, ease: 'sine.inOut' }, at)
+        .to(frames[from], { opacity: 0, scale: 0.996, duration, ease: 'sine.inOut' }, at)
+        .to(frames[to], { scale: 1, duration: duration * 0.75, ease: 'sine.out' }, at + duration * 0.5);
+    }
+
+    function prepareChips(targets) {
+      targets.forEach((el, index) => {
+        const layer = el.dataset.layer;
+        const spread = mobile ? 0.64 : tablet ? 0.84 : 1;
+        const speed = layer === 'fg' ? 1.28 : layer === 'bg' ? 0.72 : 1;
+        const depthScale = layer === 'fg' ? between(1.06, 1.36) : layer === 'bg' ? between(0.42, 0.72) : between(0.72, 1.02);
+        const outSign = pickSign();
+        const upward = between(130, 330) * spread * speed;
+        const side = between(130, layer === 'fg' ? 760 : 560) * spread * speed * outSign;
+        const drift = between(70, 240) * spread * outSign;
+
+        el.dataset.x0 = (between(-22, 22) * spread).toFixed(2);
+        el.dataset.y0 = (between(24, 72) * spread).toFixed(2);
+        el.dataset.x1 = (side * 0.18 + between(-38, 38)).toFixed(2);
+        el.dataset.y1 = (-upward * 0.22 + between(-28, 24)).toFixed(2);
+        el.dataset.x2 = (side * 0.66 + drift * 0.25).toFixed(2);
+        el.dataset.y2 = (-upward + between(-56, 76)).toFixed(2);
+        el.dataset.x3 = (side + drift).toFixed(2);
+        el.dataset.y3 = (-upward * 0.56 + between(88, 220) * spread).toFixed(2);
+        el.dataset.rot0 = between(-45, 45).toFixed(2);
+        el.dataset.rot1 = between(-220, 220).toFixed(2);
+        el.dataset.rot2 = between(-860, 860).toFixed(2);
+        el.dataset.rot3 = (Number(el.dataset.rot2) + between(-260, 260)).toFixed(2);
+        el.dataset.scale0 = (depthScale * 0.34).toFixed(3);
+        el.dataset.scale1 = (depthScale * 0.72).toFixed(3);
+        el.dataset.scale2 = depthScale.toFixed(3);
+        el.dataset.scale3 = (depthScale * (layer === 'fg' ? 1.08 : 0.52)).toFixed(3);
+        el.dataset.opacity1 = (layer === 'bg' ? between(0.34, 0.58) : layer === 'fg' ? between(0.74, 0.98) : between(0.58, 0.88)).toFixed(3);
+        el.style.zIndex = layer === 'fg' ? 32 : layer === 'bg' ? 18 : 26;
+        if (layer === 'bg') el.style.filter = 'blur(0.7px) drop-shadow(0 6px 10px rgba(89, 12, 120, 0.08))';
+      });
+    }
+
+    function prepareSoftParticles(targets, kind) {
+      targets.forEach((el) => {
+        const spread = mobile ? 0.58 : tablet ? 0.78 : 1;
+        const side = between(90, kind === 'crumb' ? 420 : 360) * spread * pickSign();
+        const rise = between(90, kind === 'crumb' ? 260 : 190) * spread;
+        el.dataset.x1 = (side * 0.22).toFixed(2);
+        el.dataset.y1 = (-rise * 0.24).toFixed(2);
+        el.dataset.x2 = side.toFixed(2);
+        el.dataset.y2 = (-rise + between(-30, 120) * spread).toFixed(2);
+        el.dataset.y3 = (Number(el.dataset.y2) + between(60, 180) * spread).toFixed(2);
+        el.dataset.rot1 = between(-180, 180).toFixed(2);
+        el.dataset.rot2 = between(-620, 620).toFixed(2);
+        el.dataset.scale1 = (kind === 'crumb' ? between(0.28, 0.74) : between(0.18, 0.48)).toFixed(3);
+        el.dataset.opacity1 = (kind === 'crumb' ? between(0.2, 0.52) : between(0.12, 0.34)).toFixed(3);
+        el.style.zIndex = kind === 'crumb' ? 24 : 20;
+      });
+    }
+
+    prepareChips(chips);
+    prepareSoftParticles(crumbs, 'crumb');
+    prepareSoftParticles(seasoning, 'seasoning');
+
+    const tl = gsap.timeline({
+      defaults: { ease: 'sine.inOut' },
+      scrollTrigger: {
+        trigger: hero,
+        start: 'top top',
+        end: mobile ? '+=2900' : '+=3900',
+        scrub: 1.35,
+        pin: true,
+        anticipatePin: 1,
+        fastScrollEnd: false,
+        invalidateOnRefresh: true,
+        onLeave: function () {
+          gsap.set(stage, { display: 'none' });
+        },
+        onEnterBack: function () {
+          gsap.set(stage, { display: 'block' });
+        }
+      }
+    });
+
+    // Stage 1-2: heavy packet entrance with anticipation, overshoot, and soft settling.
+    tl.to(packetWrap, { opacity: 1, y: mobile ? 138 : 166, scale: mobile ? 0.9 : 0.95, duration: 0.64, ease: 'power3.out' }, 0)
+      .to(glow, { opacity: 0.17, scale: 0.96, duration: 0.8, ease: 'sine.out' }, 0.06)
+      .to(shadow, { opacity: 0.12, scaleX: 0.62, scaleY: 0.38, filter: 'blur(24px)', duration: 0.64, ease: 'sine.out' }, 0.08)
+      .to(packetWrap, { y: mobile ? -14 : -24, scale: mobile ? 0.965 : 1.025, rotate: -0.8, duration: 0.92, ease: 'back.out(1.18)' }, 0.58)
+      .to(shadow, { opacity: 0.28, scaleX: 0.98, scaleY: 0.54, filter: 'blur(13px)', duration: 0.86, ease: 'power2.out' }, 0.62)
+      .to(packetWrap, { y: mobile ? 11 : 8, rotate: 0.7, duration: 0.44, ease: 'sine.inOut' }, 1.38)
+      .to(packetWrap, { y: mobile ? 4 : 0, rotate: 0, duration: 0.48, ease: 'sine.out' }, 1.78);
+
+    // Stage 3: artwork state changes are crossfaded so the packet reads as one object.
+    crossfadePacket(tl, 'closed', 'open1', 2.14, 0.32);
+    tl.to(packetWrap, { scale: mobile ? 0.98 : 1.03, rotate: 0.65, duration: 0.34, ease: 'sine.inOut' }, 2.14);
+    crossfadePacket(tl, 'open1', 'open2', 2.48, 0.34);
+    tl.to(burst, { opacity: 0.26, scale: 1, rotate: 8, duration: 0.24, ease: 'power3.out' }, 2.48)
+      .to(glow, { opacity: 0.32, scale: 1.08, duration: 0.46, ease: 'sine.out' }, 2.48)
+      .to(burst, { opacity: 0, scale: 1.38, duration: 0.5, ease: 'sine.out' }, 2.72)
+      .to(packetWrap, { rotate: 0, duration: 0.36, ease: 'sine.out' }, 2.78);
+
+    // Stage 4-7: small emergence, dense cluster, expansion, peak, and organic drift.
+    tl.to(chips.slice(0, Math.ceil(chipCount * 0.32)), {
+        opacity: (i, el) => Number(el.dataset.opacity1) * 0.68,
+        x: (i, el) => Number(el.dataset.x0),
+        y: (i, el) => Number(el.dataset.y0),
+        rotate: (i, el) => Number(el.dataset.rot0),
+        scale: (i, el) => Number(el.dataset.scale0),
+        stagger: { each: 0.022, from: 'center' },
+        duration: 0.52,
+        ease: 'power2.out'
+      }, 2.82)
+      .to(chips.slice(0, Math.ceil(chipCount * 0.58)), {
+        opacity: (i, el) => Number(el.dataset.opacity1) * 0.84,
+        x: (i, el) => Number(el.dataset.x1),
+        y: (i, el) => Number(el.dataset.y1),
+        rotate: (i, el) => Number(el.dataset.rot1),
+        scale: (i, el) => Number(el.dataset.scale1),
+        stagger: { each: 0.016, from: 'center' },
+        duration: 0.72,
+        ease: 'power3.out'
+      }, 3.08);
+    crossfadePacket(tl, 'open2', 'explosion', 3.32, 0.42);
+    tl.to(packetWrap, { scale: mobile ? 0.99 : 1.045, y: mobile ? 0 : -8, rotate: -0.35, duration: 0.48, ease: 'back.out(1.08)' }, 3.28)
+      .to(burst, { opacity: 0.15, scale: 1.42, rotate: 18, duration: 0.4, ease: 'power2.out' }, 3.34)
+      .to(glow, { opacity: 0.39, scale: 1.16, duration: 0.62, ease: 'sine.out' }, 3.3)
+      .to(chips, {
+        opacity: (i, el) => Number(el.dataset.opacity1),
+        x: (i, el) => Number(el.dataset.x2),
+        y: (i, el) => Number(el.dataset.y2),
+        rotate: (i, el) => Number(el.dataset.rot2),
+        scale: (i, el) => Number(el.dataset.scale2),
+        stagger: { each: 0.012, from: 'center' },
+        duration: 1.22,
+        ease: 'expo.out'
+      }, 3.42)
+      .to(crumbs, {
+        opacity: (i, el) => Number(el.dataset.opacity1),
+        x: (i, el) => Number(el.dataset.x2),
+        y: (i, el) => Number(el.dataset.y2),
+        rotate: (i, el) => Number(el.dataset.rot2),
+        scale: (i, el) => Number(el.dataset.scale1),
+        stagger: 0.011,
+        duration: 1.06,
+        ease: 'power3.out'
+      }, 3.56)
+      .to(seasoning, {
+        opacity: (i, el) => Number(el.dataset.opacity1),
+        x: (i, el) => Number(el.dataset.x2),
+        y: (i, el) => Number(el.dataset.y2),
+        rotate: (i, el) => Number(el.dataset.rot2) * 0.5,
+        scale: (i, el) => Number(el.dataset.scale1),
+        stagger: 0.014,
+        duration: 1.36,
+        ease: 'sine.out'
+      }, 3.72);
+
+    // Stage 8-10: calmer final 20 percent with drift, clearing, and stable settle.
+    crossfadePacket(tl, 'explosion', 'clear', 4.74, 0.44);
+    tl.to(chips, {
+        opacity: (i, el) => el.dataset.layer === 'fg' ? 0 : 0.1,
+        x: (i, el) => Number(el.dataset.x3),
+        y: (i, el) => Number(el.dataset.y3),
+        rotate: (i, el) => Number(el.dataset.rot3),
+        scale: (i, el) => Number(el.dataset.scale3),
+        stagger: { each: 0.012, from: 'edges' },
+        duration: 1.08,
+        ease: 'power2.inOut'
+      }, 4.66)
+      .to([crumbs, seasoning], { opacity: 0, scale: 0.16, stagger: 0.008, duration: 0.94, ease: 'sine.out' }, 4.84)
+      .to(burst, { opacity: 0, scale: 1.55, duration: 0.42, ease: 'sine.out' }, 4.88)
+      .to(glow, { opacity: 0.1, scale: 0.98, duration: 0.72, ease: 'sine.inOut' }, 5.02);
+    crossfadePacket(tl, 'clear', 'final', 5.54, 0.48);
+    tl.to(packetWrap, { y: 0, rotate: 0, scale: mobile ? 0.92 : 1, duration: 0.82, ease: 'back.out(1.08)' }, 5.5)
+      .to(shadow, { opacity: mobile ? 0.15 : 0.27, scaleX: 0.92, scaleY: 0.52, filter: 'blur(11px)', duration: 0.74, ease: 'sine.inOut' }, 5.5)
+      .to(finalProduct, { opacity: 1, y: 0, scale: 1, duration: 0.76, ease: 'power2.out' }, 6.02)
+      .to(copy, { opacity: 1, y: 0, duration: 0.82, ease: 'power2.out' }, 6.04)
+      .to([packetWrap, shadow, glow], { opacity: 0, duration: 0.62, ease: 'sine.out' }, 6.52)
+      .set(stage, { display: 'none' }, 7.12)
+      .to({}, { duration: 0.5 });
+
+    window.addEventListener('load', function () {
+      ScrollTrigger.refresh();
+    });
+  })();
+</script>
+</body></html>

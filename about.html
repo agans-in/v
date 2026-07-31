@@ -1,0 +1,486 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Our Artisanal Heritage | AGAN'S Premium Snacks</title>
+<!-- Google Fonts: Bricolage Grotesque, Space Grotesk, Plus Jakarta Sans, Caveat (for handwritten accents) -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Space+Grotesk:wght@300..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-primary": "#ffffff",
+                  "tertiary-container": "#c9a900",
+                  "tertiary": "#705d00",
+                  "secondary": "#8e4e00",
+                  "on-secondary": "#ffffff",
+                  "on-error-container": "#93000a",
+                  "error-container": "#ffdad6",
+                  "surface-bright": "#fff7fa",
+                  "primary": "#590c78",
+                  "on-tertiary-fixed-variant": "#544600",
+                  "on-primary-fixed": "#320047",
+                  "surface-container-highest": "#ffd6fc",
+                  "on-tertiary-container": "#4c3e00",
+                  "on-secondary-fixed": "#2e1500",
+                  "on-tertiary": "#ffffff",
+                  "surface-tint": "#863fa4",
+                  "on-surface": "#2f0c33",
+                  "on-secondary-container": "#613400",
+                  "background": "#fffbf7", // Warmer, earthier background
+                  "surface-container": "#fdf2e9", // Earthy cream
+                  "on-background": "#2f0c33",
+                  "surface-variant": "#f4e6d4", // Paper-like tone
+                  "primary-container": "#732c91",
+                  "surface": "#fffbf7",
+                  "surface-container-high": "#f9ebdc",
+                  "secondary-fixed": "#ffdcc1",
+                  "outline": "#7f7381",
+                  "surface-container-low": "#fffcf9",
+                  "on-secondary-fixed-variant": "#6c3a00",
+                  "tertiary-fixed": "#ffe170",
+                  "secondary-fixed-dim": "#ffb778",
+                  "error": "#ba1a1a",
+                  "on-tertiary-fixed": "#221b00",
+                  "inverse-on-surface": "#ffebfa",
+                  "outline-variant": "#d1c2d1",
+                  "surface-dim": "#f5e8da",
+                  "surface-container-lowest": "#ffffff",
+                  "inverse-surface": "#47224a",
+                  "on-primary-fixed-variant": "#6b248a",
+                  "tertiary-fixed-dim": "#e9c400",
+                  "on-primary-container": "#e8a7ff",
+                  "on-surface-variant": "#4e4350",
+                  "on-error": "#ffffff",
+                  "secondary-container": "#fd9000",
+                  "primary-fixed": "#f8d8ff",
+                  "inverse-primary": "#ecb2ff",
+                  "primary-fixed-dim": "#ecb2ff"
+          },
+          "borderRadius": {
+                  "DEFAULT": "1rem",
+                  "lg": "1.5rem",
+                  "xl": "2.5rem",
+                  "full": "9999px",
+                  "organic": "40% 60% 70% 30% / 40% 50% 60% 50%"
+          },
+          "spacing": {
+                  "xl": "80px",
+                  "md": "24px",
+                  "margin-desktop": "64px",
+                  "margin-mobile": "16px",
+                  "base": "8px",
+                  "xs": "4px",
+                  "sm": "12px",
+                  "gutter": "24px",
+                  "lg": "48px"
+          },
+          "fontFamily": {
+                  "headline-lg": ["Bricolage Grotesque"],
+                  "label-caps": ["Space Grotesk"],
+                  "headline-xl": ["Bricolage Grotesque"],
+                  "body-md": ["Plus Jakarta Sans"],
+                  "headline-lg-mobile": ["Bricolage Grotesque"],
+                  "body-lg": ["Plus Jakarta Sans"],
+                  "handwritten": ["Caveat", "cursive"]
+          },
+          "fontSize": {
+                  "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                  "label-caps": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                  "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                  "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .custom-grain {
+      background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+      opacity: 0.1;
+      pointer-events: none;
+    }
+    .soft-depth {
+      box-shadow: 0 10px 30px -5px rgba(71, 34, 74, 0.15);
+    }
+    .soft-depth-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -10px rgba(71, 34, 74, 0.25);
+    }
+    .organic-shape {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    .organic-shape-reverse {
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+    .paper-texture {
+      position: relative;
+    }
+    .paper-texture::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 1;
+    }
+  </style>
+
+<style id="agans-responsive-fixes">
+  @media (min-width: 768px) {
+    header nav { padding-left: 80px !important; padding-right: 80px !important; }
+    header .agans-desktop-nav { gap: 64px !important; }
+  }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-weight: 700 !important; }
+  header .font-headline { font-family: "Bricolage Grotesque", sans-serif !important; }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-family: "Space Grotesk", sans-serif !important; }
+  .agans-menu-button { display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; background: transparent; color: #590c78; padding: 0; }
+  .agans-mobile-menu { display: none; border-top: 1px solid rgba(89, 12, 120, 0.08); background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(16px); }
+  .agans-mobile-menu.is-open { display: block; }
+  .agans-mobile-menu a { display: block; min-height: 48px; padding: 14px 24px; font-family: Space Grotesk, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f0c33; text-decoration: none; }
+  .agans-mobile-menu a:hover, .agans-mobile-menu a[aria-current="page"] { color: #590c78; background: rgba(89, 12, 120, 0.05); }
+  body.agans-menu-open { overflow: hidden; }
+  .agans-link-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+  .agans-field-error { display: block; min-height: 18px; margin-top: 6px; color: #ba1a1a; font-size: 12px; }
+  .agans-form-status { min-height: 24px; color: #4e4350; }
+  @media (max-width: 1024px) {
+    .agans-menu-button { display: inline-flex; }
+    .agans-desktop-nav { display: none !important; }
+    .agans-order-desktop { display: none !important; }
+    header nav { padding-left: 24px !important; padding-right: 24px !important; }
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1023px) {
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 360px) {
+    .font-handwritten.text-7xl { font-size: 4rem !important; line-height: 1 !important; }
+    .font-headline-xl.text-headline-xl { font-size: 60px !important; }
+    [class*="w-96"][class*="h-96"][class*="bg-white/5"] { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .rounded-\[40px\] .w-96.h-96 { width: 14rem !important; height: 14rem !important; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- Header -->
+<header class="w-full top-0 sticky z-50 bg-white/80 backdrop-blur-md border-b border-primary/10">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="flex items-center gap-sm no-underline" href="index.html">
+<img alt="AGAN'S Logo" class="h-12 w-auto" src="imgs/agans-mark-primary.png">
+</a>
+<div class="hidden md:flex items-center gap-lg agans-desktop-nav">
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="index.html">Home</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="snacks.html">Snacks</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="about.html" aria-current="page">About</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="agans-link-button agans-order-desktop px-8 py-3 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 whitespace-nowrap" href="snacks.html">Order Now</a>
+<button class="agans-menu-button" type="button" data-agans-menu-toggle aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<div class="agans-mobile-menu" data-agans-mobile-menu>
+<a href="index.html">Home</a>
+<a href="snacks.html">Snacks</a>
+<a href="about.html" aria-current="page">About</a>
+<a href="contact.html">Contact</a>
+<a href="snacks.html">Order Now</a>
+</div>
+</header>
+<main>
+<!-- 1. Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col justify-center overflow-hidden px-margin-mobile md:px-margin-desktop py-xl bg-surface-container">
+<div class="absolute inset-0 z-0 transition-all duration-1000 opacity-100 translate-y-0">
+<img alt="Close up of artisanal snack preparation" class="w-full h-full object-cover brightness-90 contrast-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVY3BXiM7CIOl3A1KNnYw4xN9rab2uuLJeYG4HdjUyCu7S0FBX5KSJzitXlqW13VenIWRL7orocvHTh_X0WktWzy5NbixSC_-k4VSkw4bXt6VAxKGzd6cMSx6iK3tIlJ2j-DQzR-bpdxzm383T0pYh-gQTutGJn00Ev0LDSZWqAz8pqv6vGXBlRcaOXL80qr78HsfuIKPIgvyQCYf-PLjgsfpz59XaVD6Pcu5DwK0scKuopCQrAqA10K1z2dUL0cZ-u8d_X9VRKUea">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
+<div class="absolute inset-0 custom-grain"></div>
+</div>
+<div class="relative z-10 max-w-3xl transition-all duration-1000 opacity-100 translate-y-0">
+<div class="inline-block bg-secondary/90 text-white px-md py-xs mb-md rounded-full backdrop-blur-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Est. 1984 • Kerala Soul</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-white mb-md drop-shadow-lg">Artisanal <br><span class="italic font-handwritten text-secondary-fixed text-7xl lowercase">traditions</span><br>Redefined.</h1>
+<p class="font-body-lg text-body-lg text-white max-w-lg opacity-95 drop-shadow-md">For four decades, the kitchens of Palakkad have held our secrets. We don't just make snacks; we preserve a legacy of crunch, spice, and soul.</p>
+<div class="mt-lg">
+<span class="font-handwritten text-secondary-fixed text-3xl block -rotate-2 mb-4">Hand-rolled with love.</span>
+</div>
+</div>
+</section>
+<!-- 2. Our Story Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden paper-texture">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-xl items-center relative z-10 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="md:col-span-6">
+<span class="font-label-caps text-label-caps text-primary mb-base block tracking-widest">THE GENESIS</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-lg leading-tight">From a workshop to your world.</h2>
+<div class="space-y-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">It began in 1984, in a small, aromatic workshop in the heart of Palakkad. Our founder, driven by a passion for the perfect "crunch," started experimenting with local varieties of bananas and ancient spice blends.</p>
+<div class="relative py-lg">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary/20 rounded-full"></div>
+<p class="font-handwritten text-3xl text-secondary pl-lg italic leading-snug">"The secret isn't just in the recipe, but in the hands that press the dough and the heart that waits for the perfect gold."</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">At AGAN'S, we believe that time is the most important ingredient. Every bag carries forty years of refinement, tradition, and uncompromising Kerala spirit.</p>
+</div>
+<div class="mt-lg flex flex-wrap gap-lg">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary">40+</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant text-xs">Years of Heritage</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-secondary">100%</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant text-xs">Local Sourcing</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 relative">
+<div class="relative z-10 p-md">
+<!-- Organic container for image -->
+<div class="organic-shape overflow-hidden soft-depth aspect-[4/5] bg-surface-container-high">
+<img alt="Master artisan portrait" class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9sl9ncqOM9vSICEfoheJA3xKsxmJzP62OxdUDluMnUUWG_XwGUTU75at_bo8t7jSetKe7koa4pzFurqw-x6qVeeaf2DJUI3fFFv-ygvlX6e-DE2oyibq8gILfeosL0faMCHq6lKg--kiNvRhCWxJJohGnu6fw2Cr2RtHl6xHnBh_CW-fy3wdpPS03IVZ6iNFfPRFrnC6GrXzSKXZnE6Wi79Rq-M8cjjlKyhLa6PXyHvllaxrGANQ3Ntd2PRcmA_faa4rpETkovrz4">
+</div>
+<!-- Layered accent shape -->
+<div class="absolute -z-10 top-0 right-0 w-64 h-64 bg-secondary-container/20 rounded-organic animate-pulse"></div>
+<!-- Handwritten Badge -->
+<div class="absolute -bottom-4 -left-4 bg-tertiary-fixed p-6 rounded-full soft-depth rotate-12 flex flex-col items-center justify-center border-4 border-white">
+<span class="font-handwritten text-2xl text-on-tertiary-fixed leading-none">Authentic</span>
+<span class="font-label-caps text-[10px] text-on-tertiary-fixed tracking-widest">KERALA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Craftsmanship Section (Organic Cards) -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary relative overflow-hidden paper-texture">
+<div class="absolute inset-0 custom-grain transition-all duration-1000 opacity-100 translate-y-0"></div>
+<div class="max-w-7xl mx-auto relative z-10 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="text-center mb-xl">
+<span class="font-label-caps text-label-caps text-primary-fixed mb-sm block">THE PROCESS</span>
+<h2 class="font-headline-xl text-headline-xl text-secondary-fixed mb-sm">The Art of the Crunch</h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto opacity-80">Mass production is for others. For us, every chip and murukku is a labor of love, crafted in small batches.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Organic Card 1 -->
+<div class="bg-surface-container-low/5 backdrop-blur-sm p-lg rounded-xl border border-white/10 flex flex-col items-center text-center group hover:bg-white/10 transition-all duration-500 soft-depth-hover">
+<div class="w-20 h-20 organic-shape bg-secondary-container flex items-center justify-center mb-md soft-depth group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" style="font-variation-settings: &quot;FILL&quot; 1;">oven_gen</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-secondary-fixed-dim mb-base">Small Batch</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">We fry in limited quantities to maintain precise temperature control and oil freshness.</p>
+</div>
+<!-- Organic Card 2 -->
+<div class="bg-surface-container-low/5 backdrop-blur-sm p-lg rounded-xl border border-white/10 flex flex-col items-center text-center group hover:bg-white/10 transition-all duration-500 soft-depth-hover">
+<div class="w-20 h-20 organic-shape-reverse bg-tertiary-fixed flex items-center justify-center mb-md soft-depth group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-fixed" style="font-variation-settings: &quot;FILL&quot; 1;">eco</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-tertiary-fixed-dim mb-base">Pure Oils</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">Using only premium, cold-pressed coconut&nbsp; oils from local mills.</p>
+</div>
+<!-- Organic Card 3 -->
+<div class="bg-surface-container-low/5 backdrop-blur-sm p-lg rounded-xl border border-white/10 flex flex-col items-center text-center group hover:bg-white/10 transition-all duration-500 soft-depth-hover">
+<div class="w-20 h-20 organic-shape bg-primary-fixed flex items-center justify-center mb-md soft-depth group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-on-primary-fixed" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-base">Hand Seasoned</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">Our secret spice blends are applied by hand while the snacks are still warm.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Commitment to Quality -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low paper-texture">
+<div class="max-w-7xl mx-auto bg-surface-container-high rounded-xl overflow-hidden soft-depth flex flex-col md:flex-row transition-all duration-1000 opacity-100 translate-y-0">
+<div class="md:w-1/2 p-lg md:p-xl flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-primary mb-base">UNCOMPROMISING STANDARDS</span>
+<h2 class="font-headline-xl text-headline-xl mb-lg text-on-surface leading-tight">Zero Shortcuts. <br><span class="font-handwritten text-primary text-5xl">All Soul.</span></h2>
+<ul class="space-y-lg">
+<li class="flex items-start gap-md">
+<div class="w-10 h-10 organic-shape bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg font-bold text-on-surface">Nendran Bananas Only</p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">Sourced directly from organic farms in the&nbsp;Chengazhikodan Village.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<div class="w-10 h-10 organic-shape-reverse bg-secondary/10 flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg font-bold text-on-surface">No Artificial Preservatives</p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80">Our crunch comes from craft, not chemicals. Pure goodness only.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 h-80 md:h-auto overflow-hidden relative">
+<img alt="Close up of raw ingredients" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2KJj9II3adBI-93XIbs_JKFx9iPi6w5To8KC6ewId0Qh2QOnbKNafjLK9WEjX781S9rDoksxxcpB_VE0AGo-iRe6eaNfqF77Q1APjPi5CRkX0O6pqnxAq24Dsqx5Jme0vNsYaKA3kUL8-AbZssAA5vWIgPmbdOxN-NP9enjPIuJjMKYszMdjcqZBW-xmBDo2FbhwX1oUEOpBxioOv7nGBWWxwiBDD52xGdm791PZdUIg_soqOA6qnvyzAl5-cY9-t6ToqbcqUIsYO">
+<div class="absolute inset-0 custom-grain"></div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop relative overflow-hidden bg-primary paper-texture">
+<div class="absolute inset-0 custom-grain transition-all duration-1000 opacity-100 translate-y-0"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10 transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-xl text-headline-xl mb-lg text-white">Ready to taste the heritage?</h2>
+<div class="flex flex-col md:flex-row gap-md justify-center">
+<a class="bg-secondary text-white px-xl py-md rounded-full font-label-caps text-label-caps soft-depth hover:scale-105 transition-all inline-block" href="contact.html">EXPLORE THE COLLECTION</a>
+<a class="border-2 border-white/30 text-white px-xl py-md rounded-full font-label-caps text-label-caps hover:bg-white/10 transition-all inline-block" href="contact.html">Order Now</a>
+</div>
+<div class="mt-xl opacity-50">
+<p class="font-handwritten text-white text-5xl">Handmade with care, every single time.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-on-background text-white pt-xl pb-md">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl">
+<div class="col-span-1 md:col-span-1">
+<img alt="AGAN'S Logo" class="h-16 w-auto mb-md" src="imgs/agans-mark-white.png">
+<p class="text-sm opacity-50 leading-premium max-w-xs">Crafting exceptional snacking experiences since 1984. From our family to your table.</p>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Collections</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Private Reserve</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Traditional Favorites</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Festival Hampers</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Experience</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Store Locator</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Bulk &amp; Corporate</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Sustainability</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Follow</h4>
+<div class="flex gap-md">
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">chat</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">call</span></a></div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-md text-center">
+<p class="text-[10px] font-label tracking-widest opacity-30 uppercase">© 2026 AGAN'S SNACKS. AUTHENTICITY GUARANTEED. PRODUCT OF INDIA.</p>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = { threshold: 0.1 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section > div').forEach(el => {
+        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(el);
+      });
+    });
+</script>
+
+
+
+
+
+<script id="agans-site-script">
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-agans-menu-toggle]');
+    const menu = document.querySelector('[data-agans-mobile-menu]');
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
+      document.body.classList.remove('agans-menu-open');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = 'menu';
+    }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+        document.body.classList.toggle('agans-menu-open', !open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'menu' : 'close';
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.classList.contains('is-open') && !event.target.closest('header')) closeMenu();
+      });
+    }
+
+    document.querySelectorAll('[data-agans-add]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-28 right-6 bg-on-background text-white px-6 py-4 rounded-2xl z-[100] font-label text-[12px] tracking-widest uppercase shadow-xl';
+        toast.textContent = 'ADDED TO YOUR BAG';
+        document.body.appendChild(toast);
+        setTimeout(function () { toast.remove(); }, 1800);
+      });
+    });
+
+    document.querySelectorAll('.agans-contact-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let valid = true;
+        form.querySelectorAll('.agans-field-error').forEach(function (node) { node.textContent = ''; });
+        form.querySelectorAll('input, select, textarea').forEach(function (field) {
+          if (!field.checkValidity()) {
+            valid = false;
+            const error = form.querySelector('[data-error-for="' + field.id + '"]');
+            if (error) {
+              if (field.validity.valueMissing) error.textContent = 'Please complete this field.';
+              else if (field.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+              else if (field.validity.patternMismatch) error.textContent = 'Please enter a valid phone number.';
+              else if (field.validity.tooShort) error.textContent = 'Please add a little more detail.';
+              else error.textContent = 'Please check this field.';
+            }
+          }
+        });
+        const status = form.querySelector('.agans-form-status');
+        if (!valid) {
+          if (status) status.textContent = 'Please fix the highlighted fields.';
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        if (status) status.textContent = 'Your message is ready. Connect a form endpoint to send it.';
+      });
+    });
+  });
+</script>
+</body></html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AGAN'S PREMIUM SNACKS | Shop All</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;800&amp;family=Space+Grotesk:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#4e4350",
+                    "tertiary": "#705d00",
+                    "on-primary-container": "#e8a7ff",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#fd9000",
+                    "outline-variant": "#d1c2d1",
+                    "surface-bright": "#fff7fa",
+                    "on-tertiary-container": "#4c3e00",
+                    "surface-container-low": "#ffeffa",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#ffdefb",
+                    "on-secondary-fixed": "#2e1500",
+                    "secondary-fixed": "#ffdcc1",
+                    "primary": "#590c78",
+                    "on-primary-fixed-variant": "#6b248a",
+                    "on-background": "#2f0c33",
+                    "inverse-primary": "#ecb2ff",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#ffd6fc",
+                    "primary-fixed-dim": "#ecb2ff",
+                    "inverse-on-surface": "#ffebfa",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "secondary": "#8e4e00",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#613400",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#221b00",
+                    "surface-tint": "#863fa4",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "on-primary-fixed": "#320047",
+                    "inverse-surface": "#47224a",
+                    "surface-dim": "#fdcafb",
+                    "surface": "#fff7fa",
+                    "tertiary-container": "#c9a900",
+                    "surface-container-highest": "#ffd6fc",
+                    "secondary-fixed-dim": "#ffb778",
+                    "surface-container": "#ffe7fb",
+                    "on-secondary-fixed-variant": "#6c3a00",
+                    "on-error": "#ffffff",
+                    "outline": "#7f7381",
+                    "primary-fixed": "#f8d8ff",
+                    "primary-container": "#732c91",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffe170",
+                    "on-surface": "#2f0c33",
+                    "background": "#fff7fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "80px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "sm": "12px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "margin-desktop": "64px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Bricolage Grotesque"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-xl": ["Bricolage Grotesque"],
+                    "label-caps": ["Space Grotesk"],
+                    "headline-lg-mobile": ["Bricolage Grotesque"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "500"}],
+                    "headline-xl": ["72px", {"lineHeight": "1.0", "letterSpacing": "-0.05em", "fontWeight": "800"}],
+                    "label-caps": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.1", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(47, 12, 51, 0.08);
+        }
+        .soft-shadow-hover:hover {
+            box-shadow: 0 20px 50px -12px rgba(47, 12, 51, 0.12);
+            transform: translateY(-4px);
+        }
+        .gradient-bg {
+            background: linear-gradient(180deg, #fff7fa 0%, #ffeffa 100%);
+        }
+        .subtle-border {
+            border: 1px solid rgba(89, 12, 120, 0.1);
+        }
+            .leading-premium {
+            line-height: 1.8;
+        }
+    </style>
+
+<style id="agans-responsive-fixes">
+  @media (min-width: 768px) {
+    header nav { padding-left: 80px !important; padding-right: 80px !important; }
+    header .agans-desktop-nav { gap: 64px !important; }
+  }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-weight: 700 !important; }
+  header .font-headline { font-family: "Bricolage Grotesque", sans-serif !important; }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-family: "Space Grotesk", sans-serif !important; }
+  .agans-menu-button { display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; background: transparent; color: #590c78; padding: 0; }
+  .agans-mobile-menu { display: none; border-top: 1px solid rgba(89, 12, 120, 0.08); background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(16px); }
+  .agans-mobile-menu.is-open { display: block; }
+  .agans-mobile-menu a { display: block; min-height: 48px; padding: 14px 24px; font-family: Space Grotesk, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f0c33; text-decoration: none; }
+  .agans-mobile-menu a:hover, .agans-mobile-menu a[aria-current="page"] { color: #590c78; background: rgba(89, 12, 120, 0.05); }
+  body.agans-menu-open { overflow: hidden; }
+  .agans-link-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+  .agans-field-error { display: block; min-height: 18px; margin-top: 6px; color: #ba1a1a; font-size: 12px; }
+  .agans-form-status { min-height: 24px; color: #4e4350; }
+  @media (max-width: 1024px) {
+    .agans-menu-button { display: inline-flex; }
+    .agans-desktop-nav { display: none !important; }
+    .agans-order-desktop { display: none !important; }
+    header nav { padding-left: 24px !important; padding-right: 24px !important; }
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1023px) {
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 360px) {
+    .font-handwritten.text-7xl { font-size: 4rem !important; line-height: 1 !important; }
+    .font-headline-xl.text-headline-xl { font-size: 60px !important; }
+    [class*="w-96"][class*="h-96"][class*="bg-white/5"] { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .rounded-\[40px\] .w-96.h-96 { width: 14rem !important; height: 14rem !important; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Header -->
+<header class="w-full top-0 sticky z-50 bg-white/80 backdrop-blur-md border-b border-primary/10">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="flex items-center gap-sm no-underline" href="index.html">
+<img alt="AGAN'S Logo" class="h-12 w-auto" src="imgs/agans-mark-primary.png">
+</a>
+<div class="hidden md:flex items-center gap-lg agans-desktop-nav">
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="index.html">Home</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="snacks.html" aria-current="page">Snacks</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="agans-link-button agans-order-desktop px-8 py-3 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 whitespace-nowrap" href="snacks.html">Order Now</a>
+<button class="agans-menu-button" type="button" data-agans-menu-toggle aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<div class="agans-mobile-menu" data-agans-mobile-menu>
+<a href="index.html">Home</a>
+<a href="snacks.html" aria-current="page">Snacks</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="snacks.html">Order Now</a>
+</div>
+</header>
+<main class="pt-40 pb-xl max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop relative">
+<!-- Header Section -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-lg">
+<div class="max-w-3xl">
+<span class="font-label-caps text-[12px] text-secondary uppercase tracking-[0.2em] mb-4 block">Premium Selections</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6">Craveable<br>Crunch</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">Indulge in our artisan snacks, crafted with secret family recipes and the finest coastal ingredients. Every bite is a celebration of flavor.</p>
+</div>
+<!-- Category Filter -->
+<div class="flex flex-wrap gap-2">
+<button class="font-label-caps text-[12px] px-6 py-3 bg-primary text-white rounded-full transition-all">All Snacks</button>
+<button class="font-label-caps text-[12px] px-6 py-3 bg-white text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary rounded-full transition-all">Chips</button>
+<button class="font-label-caps text-[12px] px-6 py-3 bg-white text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary rounded-full transition-all">Murukku</button>
+<button class="font-label-caps text-[12px] px-6 py-3 bg-white text-on-surface-variant border border-outline-variant hover:border-primary hover:text-primary rounded-full transition-all">Sweets</button>
+</div>
+</div>
+</header>
+<!-- Product Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Featured Card (Landscape) -->
+<div class="lg:col-span-2 group relative overflow-hidden bg-surface-container-low rounded-3xl flex flex-col md:flex-row items-center transition-transform duration-500 hover:scale-[1.01] p-8 gap-8">
+<div class="absolute top-8 left-8 z-10">
+<span class="bg-primary text-white font-label-caps text-[10px] px-3 py-1 rounded-full uppercase tracking-widest">Best Seller</span>
+</div>
+<div class="w-full md:w-1/2 flex justify-center">
+<img alt="AGAN'S snack product" class="w-80 h-auto object-contain transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+</div>
+<div class="w-full md:w-1/2">
+<div class="flex items-center gap-1 mb-4 opacity-60">
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="material-symbols-outlined text-[16px] fill-current">star</span>
+<span class="font-label-caps text-[10px] ml-2">(124)</span>
+</div>
+<h3 class="font-headline-lg text-3xl mb-4 text-on-surface">Spicy Hot Garlic Banana Chips</h3>
+<p class="font-body-md text-on-surface-variant mb-8 leading-relaxed">Our signature thin-cut banana chips infused with real roasted garlic and a kick of bird's eye chili.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-3xl text-primary">₹149<span class="text-sm font-body-md text-on-surface-variant opacity-60 ml-2">/ 150g</span></span>
+<button data-agans-add class="bg-primary text-white font-label-caps text-[12px] px-8 py-4 rounded-full hover:bg-on-background transition-colors flex items-center gap-2" type="button">
+                        ADD TO BAG
+                    </button>
+</div>
+</div>
+</div>
+<!-- Standard Card 1 -->
+<div class="group flex flex-col">
+<div class="bg-white rounded-3xl mb-6 soft-shadow subtle-border relative overflow-hidden transition-all duration-500 soft-shadow-hover p-6">
+<div class="aspect-square bg-surface-container/30 rounded-2xl flex justify-center items-center mb-4">
+<img alt="AGAN'S snack product" class="w-48 h-auto object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg text-xl text-on-surface">Salted Classic Banana Chips</h3>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed mb-4">Lightly seasoned with sea salt crystals for the ultimate pure crunch.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-xl text-primary">₹129<span class="text-xs font-body-md text-on-surface-variant opacity-60 ml-1">/ 150g</span></span>
+<button data-agans-add class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Card 2 -->
+<div class="group flex flex-col">
+<div class="bg-white rounded-3xl mb-6 soft-shadow subtle-border relative overflow-hidden transition-all duration-500 soft-shadow-hover p-6">
+<div class="aspect-square bg-surface-container/30 rounded-2xl flex justify-center items-center mb-4">
+<img alt="AGAN'S snack product" class="w-48 h-auto object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYHYLnR0xmu9IXc6fAvhunYlM0eI-zCi8mQf1HnhUHSA09IzGgIpiXXoD7VVxd0HeIlbXa-ssf_vatSraYtT1fVgPMd1QZVBisHlIem5x8cWDsMRAzZYT_teNds1Ra3XW2tmByhGdPNiqpPY6DqdzMVrMNlUzyyCBz-w0akY1UBwYE3_VVYCokvMt0wL_6-Z83FuKytmqRqkE5Yb14C0ueLyrJQuiurSivHQR5oLiU8G4TFxDSkoQ0MS8bTwX1zBzQIgh_9Lvo3NXo">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg text-xl text-on-surface">Butter Murukku Whirls</h3>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed mb-4">Melt-in-your-mouth texture with a rich, buttery finish and hints of cumin.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-xl text-primary">₹159<span class="text-xs font-body-md text-on-surface-variant opacity-60 ml-1">/ 200g</span></span>
+<button data-agans-add class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Card 3 -->
+<div class="group flex flex-col">
+<div class="bg-white rounded-3xl mb-6 soft-shadow subtle-border relative overflow-hidden transition-all duration-500 soft-shadow-hover p-6">
+<div class="aspect-square bg-surface-container/30 rounded-2xl flex justify-center items-center mb-4">
+<img alt="AGAN'S snack product" class="w-48 h-auto object-contain transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Gj-eszHi8Yp0fuFXQqVpW52rssaiGEwzihgBh6bupV0ZfYVXlLsLAZPpcdVY07ghfD6-wZsdAaPDIQQHpfxW5r9WO_h0NyPwgAfN7HREoPiTKfU-1cOtxmWd-MfUHER19iJ3U2rUHEmSkiIKItdFfeqQxDlUTzXOtB2zgw0q0OEAZ4N0nc-Tyjg0A9xToAMNkzA7QrtFzBZ8vGTjAzd2vvtTuc6z6qpHtUQF-FP8HZ4mTsYiVrpLRdF7AbxR8WDTnfdiKRGSZDfF">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg text-xl text-on-surface">Royal Madras Mixture</h3>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm leading-relaxed mb-4">A complex blend of nuts, dried fruits, and crispy lentils with 14 unique spices.</p>
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-xl text-primary">₹189<span class="text-xs font-body-md text-on-surface-variant opacity-60 ml-1">/ 250g</span></span>
+<button data-agans-add class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background text-white pt-xl pb-md">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl">
+<div class="col-span-1 md:col-span-1">
+<img alt="AGAN'S Logo" class="h-16 w-auto mb-md" src="imgs/agans-mark-white.png">
+<p class="text-sm opacity-50 leading-premium max-w-xs">Crafting exceptional snacking experiences since 1984. From our family to your table.</p>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Collections</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Private Reserve</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Traditional Favorites</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Festival Hampers</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Experience</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Store Locator</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Bulk &amp; Corporate</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Sustainability</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Follow</h4>
+<div class="flex gap-md">
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">chat</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">call</span></a></div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-md text-center">
+<p class="text-[10px] font-label tracking-widest opacity-30 uppercase">© 2026 AGAN'S SNACKS. AUTHENTICITY GUARANTEED. PRODUCT OF INDIA.</p>
+</div>
+</footer>
+<!-- Floating Cart -->
+
+<script>
+    // Toast simulation
+    document.querySelectorAll('button').forEach(btn => {
+        if (btn.innerText.includes('BAG') || btn.querySelector('.material-symbols-outlined')?.innerText === 'add') {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const toast = document.createElement('div');
+                toast.className = 'fixed top-28 right-10 bg-on-background text-white soft-shadow px-8 py-4 rounded-2xl z-[100] animate-bounce font-label-caps text-[12px] flex items-center gap-3 border border-white/10';
+                toast.innerHTML = '<span class="material-symbols-outlined text-green-400">check_circle</span> ADDED TO YOUR BAG';
+                document.body.appendChild(toast);
+                setTimeout(() => {
+                    toast.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                    setTimeout(() => toast.remove(), 500);
+                }, 2000);
+            });
+        }
+    });
+</script>
+
+
+
+
+
+
+
+<script id="agans-site-script">
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-agans-menu-toggle]');
+    const menu = document.querySelector('[data-agans-mobile-menu]');
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
+      document.body.classList.remove('agans-menu-open');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = 'menu';
+    }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+        document.body.classList.toggle('agans-menu-open', !open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'menu' : 'close';
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.classList.contains('is-open') && !event.target.closest('header')) closeMenu();
+      });
+    }
+
+    document.querySelectorAll('[data-agans-add]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-28 right-6 bg-on-background text-white px-6 py-4 rounded-2xl z-[100] font-label text-[12px] tracking-widest uppercase shadow-xl';
+        toast.textContent = 'ADDED TO YOUR BAG';
+        document.body.appendChild(toast);
+        setTimeout(function () { toast.remove(); }, 1800);
+      });
+    });
+
+    document.querySelectorAll('.agans-contact-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let valid = true;
+        form.querySelectorAll('.agans-field-error').forEach(function (node) { node.textContent = ''; });
+        form.querySelectorAll('input, select, textarea').forEach(function (field) {
+          if (!field.checkValidity()) {
+            valid = false;
+            const error = form.querySelector('[data-error-for="' + field.id + '"]');
+            if (error) {
+              if (field.validity.valueMissing) error.textContent = 'Please complete this field.';
+              else if (field.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+              else if (field.validity.patternMismatch) error.textContent = 'Please enter a valid phone number.';
+              else if (field.validity.tooShort) error.textContent = 'Please add a little more detail.';
+              else error.textContent = 'Please check this field.';
+            }
+          }
+        });
+        const status = form.querySelector('.agans-form-status');
+        if (!valid) {
+          if (status) status.textContent = 'Please fix the highlighted fields.';
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        if (status) status.textContent = 'Your message is ready. Connect a form endpoint to send it.';
+      });
+    });
+  });
+</script>
+</body></html>
